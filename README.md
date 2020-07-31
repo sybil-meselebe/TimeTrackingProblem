@@ -18,4 +18,4 @@ Time entered and information from the program should be stored in a csv or excel
 3. We computed the hours spent by manipulating time_seconds() function from the datetime module.
 4. We then calaculating how much he makes by calling a function we created for calculating his pay per the # of hours.
 5. Finally we input the desired values to a list and write to a csv.
-6. The program returns a string summary of the users time tracking
+6. The program returns a string summary of the users time tracking.
