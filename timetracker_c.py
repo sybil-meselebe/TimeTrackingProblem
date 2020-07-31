@@ -1,4 +1,5 @@
 #Time Tracking code
+#Group members: Winston Best-Ezeani, Sybil Meselebe and Theresa Allotey
 from datetime import datetime as dt
 import csv
 
