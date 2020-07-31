@@ -33,4 +33,13 @@ def getDatetime(ttype): #ttype sepcifies wether it is a start or end
             isValid=True
         except:
             print ("Please try again with the right format!\n")
+	
+	#Calculate money made
+	amount = pay_per_hour(t_time)
+	
+#Function to calculate the pay per hour
+def pay_per_hour(hours):
+	amount = round(5 * hours, 2)
+	return amount
+	
 			
