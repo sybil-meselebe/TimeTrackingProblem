@@ -31,8 +31,9 @@ def timeTracker():
 	#Write details to a csv file
 	with open(r'timetracking.csv', 'a', newline='') as file:
 		csv.writer(file).writerow(taskList)
-
-    result = "\nNana worked for " + str(t_time) + " hours, between " + str(startDate) + " and " + str(endDate) + ". He should be paid $" + str(amount) + "."
+		
+	
+	result = "\nNana worked for " + str(t_time) + " hours, between " + str(startDate) + " and " + str(endDate) + ". He should be paid $" + str(amount) + "."
 
 	print (result)
 
