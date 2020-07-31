@@ -15,3 +15,4 @@ def getDatetime(ttype): #ttype sepcifies wether it is a start or end
         except:
             print ("Please try again with the right format!\n")
 			
+    return result
