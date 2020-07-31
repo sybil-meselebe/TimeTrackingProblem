@@ -2,6 +2,25 @@
 from datetime import datetime as dt
 import csv
 
+#MAIN FUNCTION
+def timeTracker():
+
+	print ("Welcome to our Time Tracking App\n")
+
+	task = input("Please enter the type of the task to begin: ")
+
+	#Get the start and end date and times using these user defined functions
+	startDate = getDatetime("start")
+	endDate = getDatetime("end")
+
+	#Calculate hours spent
+
+	'''find duration'''
+	duration = endDate - startDate
+
+	'''compute total time spent in hours'''
+	t_time = duration.total_seconds()/60**2
+
 
 #Function to get the start and end times from the user
 def getDatetime(ttype): #ttype sepcifies wether it is a start or end
@@ -15,4 +34,3 @@ def getDatetime(ttype): #ttype sepcifies wether it is a start or end
         except:
             print ("Please try again with the right format!\n")
 			
-    return result
