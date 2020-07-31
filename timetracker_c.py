@@ -42,4 +42,5 @@ def pay_per_hour(hours):
 	amount = round(5 * hours, 2)
 	return amount
 	
-			
+if __name__ == "__main__":
+    timeTracker()			
