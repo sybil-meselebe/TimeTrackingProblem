@@ -20,6 +20,10 @@ def timeTracker():
 
 	'''compute total time spent in hours'''
 	t_time = duration.total_seconds()/60**2
+	
+	#Calculate money made
+	amount = pay_per_hour(t_time)
+	
 
 
 #Function to get the start and end times from the user
@@ -34,8 +38,6 @@ def getDatetime(ttype): #ttype sepcifies wether it is a start or end
         except:
             print ("Please try again with the right format!\n")
 	
-	#Calculate money made
-	amount = pay_per_hour(t_time)
 	
 #Function to calculate the pay per hour
 def pay_per_hour(hours):
