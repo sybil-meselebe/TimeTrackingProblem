@@ -31,6 +31,12 @@ def timeTracker():
 	with open(r'timetracking.csv', 'a', newline='') as file:
 		csv.writer(file).writerow(taskList)
 
+    result = "\nNana worked for " + str(t_time) + " hours, between " + str(startDate) + " and " + str(endDate) + ". He should be paid $" + str(amount) + "."
+
+	print (result)
+
+
+'''OTHERS'''
 
 #Function to get the start and end times from the user
 def getDatetime(ttype): #ttype sepcifies wether it is a start or end
@@ -49,6 +55,7 @@ def getDatetime(ttype): #ttype sepcifies wether it is a start or end
 def pay_per_hour(hours):
 	amount = round(5 * hours, 2)
 	return amount
-	
+
+
 if __name__ == "__main__":
     timeTracker()			
