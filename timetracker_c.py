@@ -24,6 +24,12 @@ def timeTracker():
 	#Calculate money made
 	amount = pay_per_hour(t_time)
 	
+	#Create a list of task details for writing to csv
+	taskList = [task, startDate, endDate, t_time, amount]
+
+	#Write details to a csv file
+	with open(r'timetracking.csv', 'a', newline='') as file:
+		csv.writer(file).writerow(taskList)
 
 
 #Function to get the start and end times from the user
